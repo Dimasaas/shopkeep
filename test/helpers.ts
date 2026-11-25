@@ -22,7 +22,7 @@ export function novasDeps(sobrescrever: Partial<Deps> = {}): Deps {
     provedor: new ProvedorFalso(0),
     pedidos: new PedidosEmMemoria(),
     config: {
-      token: "token-de-teste",
+      token: "tk-test",
       appId: "100000000000000099",
       guildId: IDS_TESTE.guild,
       categoriaTicketsId: IDS_TESTE.categoria,
