@@ -18,7 +18,7 @@ export interface Payload {
   content?: string;
 }
 
-export function painelLoja(catalogo: Catalogo, nomeLoja = "Loja"): Payload {
+export function painelLoja(catalogo: Catalogo, nomeLoja = "Shopkeep"): Payload {
   const embed = new EmbedBuilder()
     .setColor(COR.marca)
     .setTitle(`🛒 ${nomeLoja}`)

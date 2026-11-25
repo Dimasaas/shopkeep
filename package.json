@@ -1,7 +1,7 @@
 {
-  "name": "discord-loja-bot",
+  "name": "shopkeep",
   "version": "0.1.0",
-  "description": "Template de bot de loja no Discord: painel de produtos, ticket privado, pagamento plugável (com provedor falso para desenvolvimento) e comandos da equipe.",
+  "description": "Shopkeep: a loja inteira dentro do seu servidor do Discord (painel de produtos, ticket privado, pagamento plugável).",
   "type": "module",
   "license": "PolyForm-Noncommercial-1.0.0",
   "author": "João Victor Diamantino Cardoso",

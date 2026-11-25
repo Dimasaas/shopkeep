@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" font-family="ui-monospace,'Cascadia Code','SF Mono',Menlo,Consolas,monospace">
-  <title>discord-loja-bot</title>
+  <title>Shopkeep</title>
   <defs>
     <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#2a1052"/>
@@ -32,7 +32,7 @@
 
   <!-- texto -->
   <text x="80" y="118" font-size="20" fill="#B388FF">$ npm start</text>
-  <text x="80" y="188" font-size="64" font-weight="700" fill="#ffffff">discord-loja-bot<tspan class="cursor" fill="#00E5FF">_</tspan></text>
-  <text x="80" y="232" font-size="22" fill="#cfd8ff">painel · ticket privado · pagamento plugável</text>
+  <text x="80" y="188" font-size="64" font-weight="700" fill="#ffffff">Shopkeep<tspan class="cursor" fill="#00E5FF">_</tspan></text>
+  <text x="80" y="232" font-size="22" fill="#cfd8ff">a loja inteira dentro do seu servidor do Discord</text>
   <text x="80" y="274" font-size="16" fill="#00E5FF">TypeScript · discord.js v14 · Node 20+</text>
 </svg>

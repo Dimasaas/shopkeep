@@ -1,11 +1,13 @@
-<p align="center"><img src="docs/banner.svg" alt="discord-loja-bot" width="100%"></p>
+<p align="center"><img src="docs/banner.svg" alt="shopkeep" width="100%"></p>
 
-<h1 align="center">discord-loja-bot</h1>
+<h1 align="center">Shopkeep</h1>
 
-<p align="center">Template de bot de loja para Discord: painel de produtos, ticket privado de compra, pagamento plugável e comandos da equipe.</p>
+<p align="center"><strong>a loja inteira dentro do seu servidor do Discord</strong></p>
+
+<p align="center">Template de bot de loja: painel de produtos, ticket privado de compra, pagamento plugável e comandos da equipe.</p>
 
 <p align="center">
-  <a href="https://github.com/Dimasaas/discord-loja-bot/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/Dimasaas/discord-loja-bot/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/Dimasaas/shopkeep/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/Dimasaas/shopkeep/actions/workflows/ci.yml/badge.svg"></a>
   <img alt="Node" src="https://img.shields.io/badge/node-%3E%3D20-00E5FF?logo=node.js&logoColor=white">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white">
   <img alt="discord.js" src="https://img.shields.io/badge/discord.js-v14-5865F2?logo=discord&logoColor=white">
@@ -66,8 +68,8 @@ sequenceDiagram
 ### 2. Configure e suba
 
 ```bash
-git clone https://github.com/Dimasaas/discord-loja-bot.git
-cd discord-loja-bot
+git clone https://github.com/Dimasaas/shopkeep.git
+cd shopkeep
 npm ci
 cp .env.example .env     # preencha DISCORD_TOKEN, DISCORD_APP_ID e DISCORD_GUILD_ID
 npm run dev
@@ -146,7 +148,7 @@ Estrutura: `src/views.ts` (mensagens, funções puras), `src/handlers.ts` (inter
 
 ## 🇺🇸 TL;DR
 
-A Discord shop bot template (TypeScript, discord.js v14): a product select panel, a **Buy** button that opens a private ticket channel (buyer + staff only), payments behind a `ProvedorDePagamento` interface with a **fake provider** for development, staff commands `/entregar` (deliver) and `/fechar` (close), and an **idempotent `/setup`** that creates roles, categories and channels. Everything (token, IDs) comes from `.env`; products are fictional and live in `config/produtos.json`. Fully tested with a mocked Discord client. Run `npm ci && npm run dev`, then `/setup` in your server. UI strings are in Portuguese (pt-BR).
+**Shopkeep** is a Discord shop bot template (TypeScript, discord.js v14): a product select panel, a **Buy** button that opens a private ticket channel (buyer + staff only), payments behind a `ProvedorDePagamento` interface with a **fake provider** for development, staff commands `/entregar` (deliver) and `/fechar` (close), and an **idempotent `/setup`** that creates roles, categories and channels. Everything (token, IDs) comes from `.env`; products are fictional and live in `config/produtos.json`. Fully tested with a mocked Discord client. Run `npm ci && npm run dev`, then `/setup` in your server. UI strings are in Portuguese (pt-BR).
 
 ## Licença
 
