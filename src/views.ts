@@ -10,7 +10,7 @@ import { formatarPreco, type Catalogo, type Produto } from "./produtos.js";
 
 // Views = funções puras que devolvem o payload da mensagem. Fáceis de testar, sem cliente do Discord.
 
-export const COR = { marca: 0x7c4dff, ok: 0x2ecc71, aviso: 0xf1c40f } as const;
+export const COR = { marca: 0xff4fa3, ok: 0x2ecc71, aviso: 0xf1c40f } as const;
 
 export interface Payload {
   embeds?: EmbedBuilder[];

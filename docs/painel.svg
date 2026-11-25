@@ -8,16 +8,16 @@
   <text x="38" y="28" font-size="15" font-weight="600" fill="#f2f3f5">painel-loja</text>
 
   <!-- mensagem do bot -->
-  <circle cx="44" cy="84" r="20" fill="#7c4dff"/>
+  <circle cx="44" cy="84" r="20" fill="#FF4FA3"/>
   <text x="44" y="91" font-size="20" text-anchor="middle" fill="#fff">🛒</text>
-  <text x="76" y="78" font-size="15" font-weight="600" fill="#b388ff">Shopkeep</text>
+  <text x="76" y="78" font-size="15" font-weight="600" fill="#FF4FA3">Shopkeep</text>
   <rect x="204" y="65" width="34" height="16" rx="3" fill="#5865f2"/>
   <text x="221" y="77" font-size="10" font-weight="700" text-anchor="middle" fill="#fff">APP</text>
   <text x="246" y="78" font-size="12" fill="#949ba4">Hoje às 10:00</text>
 
   <!-- embed -->
   <rect x="76" y="92" width="740" height="268" rx="4" fill="#2b2d31"/>
-  <rect x="76" y="92" width="4" height="268" rx="2" fill="#7c4dff"/>
+  <rect x="76" y="92" width="4" height="268" rx="2" fill="#FF4FA3"/>
   <text x="98" y="122" font-size="16" font-weight="700" fill="#f2f3f5">🛒 Shopkeep</text>
   <text x="98" y="148" font-size="14" fill="#dbdee1">Escolha um produto no menu abaixo para ver os detalhes e comprar.</text>
 
@@ -46,9 +46,9 @@
 
   <!-- dica: resposta efêmera -->
   <rect x="76" y="428" width="500" height="76" rx="6" fill="#2b2d31"/>
-  <rect x="76" y="428" width="4" height="76" rx="2" fill="#2ecc71"/>
+  <rect x="76" y="428" width="4" height="76" rx="2" fill="#7C5CFF"/>
   <text x="96" y="452" font-size="14" font-weight="700" fill="#f2f3f5">🏆 Plano Anual</text>
   <text x="96" y="472" font-size="12" fill="#949ba4">Só você vê esta mensagem</text>
-  <rect x="96" y="480" width="104" height="18" rx="3" fill="#248046"/>
+  <rect x="96" y="480" width="104" height="18" rx="3" fill="#FF4FA3"/>
   <text x="148" y="494" font-size="12" font-weight="600" text-anchor="middle" fill="#fff">🛒 Comprar</text>
 </svg>

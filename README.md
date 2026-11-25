@@ -8,10 +8,10 @@
 
 <p align="center">
   <a href="https://github.com/Dimasaas/shopkeep/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/Dimasaas/shopkeep/actions/workflows/ci.yml/badge.svg"></a>
-  <img alt="Node" src="https://img.shields.io/badge/node-%3E%3D20-00E5FF?logo=node.js&logoColor=white">
+  <img alt="Node" src="https://img.shields.io/badge/node-%3E%3D20-4D8BFF?logo=node.js&logoColor=white">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white">
   <img alt="discord.js" src="https://img.shields.io/badge/discord.js-v14-5865F2?logo=discord&logoColor=white">
-  <img alt="licença" src="https://img.shields.io/badge/licença-PolyForm%20Noncommercial-7C4DFF">
+  <img alt="licença" src="https://img.shields.io/badge/licença-PolyForm%20Noncommercial-FF4FA3">
 </p>
 
 <p align="center"><img src="docs/painel.svg" alt="Mockup do painel de produtos no Discord" width="760"></p>
