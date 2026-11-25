@@ -1,5 +1,6 @@
 import {
   MessageFlags,
+  PermissionFlagsBits,
   type ButtonInteraction,
   type ChatInputCommandInteraction,
   type Client,
@@ -14,6 +15,7 @@ import { registrarLog } from "./logs.js";
 import type { ProvedorDePagamento } from "./pagamento/index.js";
 import type { RepositorioDePedidos } from "./pedidos.js";
 import type { Catalogo } from "./produtos.js";
+import { aoSetup } from "./setup.js";
 import { aoConfirmarPagamentoFalso, aoEntregar, aoFechar } from "./staff.js";
 import { criarCanalDeTicket, ehEquipe } from "./tickets.js";
 import { mensagemDoTicket, pagamentoConfirmado, painelLoja, produtoIndisponivel, resumoProduto, textoDeLog } from "./views.js";
@@ -130,6 +132,9 @@ export function criarRoteador(deps: Deps) {
           return void (await aoEntregar(i, deps));
         case NOMES.fechar:
           return void (await aoFechar(i, deps));
+        case NOMES.setup:
+          if (!i.memberPermissions?.has(PermissionFlagsBits.Administrator)) return void (await i.reply({ content: "Só administradores usam o /setup.", ...efemero }));
+          return void (await aoSetup(i, deps.config, deps.catalogo));
         case NOMES.confirmar:
           return void (await aoConfirmarPagamentoFalso(i, deps));
       }

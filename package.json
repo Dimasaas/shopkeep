@@ -10,7 +10,6 @@
     "build": "tsc -p tsconfig.json",
     "dev": "tsx watch src/index.ts",
     "start": "node dist/index.js",
-    "setup": "tsx src/cli-setup.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
