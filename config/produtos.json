@@ -1,0 +1,26 @@
+{
+  "moeda": "BRL",
+  "produtos": [
+    {
+      "id": "plano-mensal",
+      "nome": "Plano Mensal",
+      "descricao": "Acesso completo por 30 dias, renovável.",
+      "precoCentavos": 2990,
+      "emoji": "📅"
+    },
+    {
+      "id": "plano-anual",
+      "nome": "Plano Anual",
+      "descricao": "Acesso completo por 12 meses com desconto.",
+      "precoCentavos": 29900,
+      "emoji": "🏆"
+    },
+    {
+      "id": "suporte-premium",
+      "nome": "Suporte Premium",
+      "descricao": "Atendimento prioritário e canal exclusivo por 30 dias.",
+      "precoCentavos": 9900,
+      "emoji": "🛟"
+    }
+  ]
+}

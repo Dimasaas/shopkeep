@@ -1,0 +1,27 @@
+{
+  "name": "discord-loja-bot",
+  "version": "0.1.0",
+  "description": "Template de bot de loja no Discord: painel de produtos, ticket privado, pagamento plugável (com provedor falso para desenvolvimento) e comandos da equipe.",
+  "type": "module",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "author": "João Victor Diamantino Cardoso",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "setup": "tsx src/cli-setup.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
