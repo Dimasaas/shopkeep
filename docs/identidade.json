@@ -1,0 +1,13 @@
+{
+  "nome": "shopkeep",
+  "paleta": {
+    "fundo": "#2D1B4E",
+    "primaria": "#A3E635",
+    "secundaria": "#F472B6",
+    "texto": "#FFF7E6",
+    "acento": "#FDE047"
+  },
+  "fonte": "'Trebuchet MS', 'Segoe UI', system-ui, sans-serif",
+  "logo": "docs/logo.svg",
+  "conceito": "Lojinha de bairro divertida: toldo listrado, balcão em forma de balão de conversa, etiqueta de preço e carimbo VENDIDO."
+}

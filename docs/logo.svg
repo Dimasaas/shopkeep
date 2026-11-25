@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>Shopkeep: toldo listrado sobre um balcão em forma de balão de conversa com uma sacola</title>
+  <defs>
+    <clipPath id="toldo"><path d="M62 46 H194 L222 110 H34 Z"/></clipPath>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#2D1B4E"/>
+  <!-- toldo -->
+  <rect x="52" y="34" width="152" height="14" rx="7" fill="#A3E635"/>
+  <g clip-path="url(#toldo)">
+    <rect x="34" y="46" width="31" height="70" fill="#F472B6"/>
+    <rect x="65" y="46" width="31" height="70" fill="#FFF7E6"/>
+    <rect x="96" y="46" width="31" height="70" fill="#F472B6"/>
+    <rect x="127" y="46" width="31" height="70" fill="#FFF7E6"/>
+    <rect x="158" y="46" width="31" height="70" fill="#F472B6"/>
+    <rect x="189" y="46" width="33" height="70" fill="#FFF7E6"/>
+  </g>
+  <g>
+    <circle cx="49.5" cy="110" r="15.5" fill="#F472B6"/>
+    <circle cx="80.5" cy="110" r="15.5" fill="#FFF7E6"/>
+    <circle cx="111.5" cy="110" r="15.5" fill="#F472B6"/>
+    <circle cx="142.5" cy="110" r="15.5" fill="#FFF7E6"/>
+    <circle cx="173.5" cy="110" r="15.5" fill="#F472B6"/>
+    <circle cx="205" cy="110" r="15.5" fill="#FFF7E6"/>
+  </g>
+  <!-- balcão em forma de balão de conversa -->
+  <path d="M50 138 H206 Q222 138 222 154 V196 Q222 212 206 212 H110 L74 238 L82 212 H66 Q50 212 50 196 Z" fill="#FFF7E6"/>
+  <!-- sacola -->
+  <path d="M104 160 H152 L156 204 H100 Z" fill="#A3E635" stroke="#2D1B4E" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M114 160 V154 Q128 140 142 154 V160" fill="none" stroke="#2D1B4E" stroke-width="5" stroke-linecap="round"/>
+  <!-- etiqueta de preço -->
+  <path d="M170 156 H198 L206 166 L198 176 H170 Z" fill="#FDE047" stroke="#2D1B4E" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="198" cy="166" r="2.5" fill="#2D1B4E"/>
+</svg>

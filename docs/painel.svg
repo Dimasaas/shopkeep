@@ -1,54 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="520" viewBox="0 0 860 520" font-family="'gg sans','Segoe UI',Helvetica,Arial,sans-serif">
-  <title>Mockup do painel de produtos do bot no Discord</title>
-  <rect width="860" height="520" rx="10" fill="#313338"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="520" viewBox="0 0 860 520" font-family="'Trebuchet MS', 'Segoe UI', system-ui, sans-serif">
+  <title>Mockup do painel de produtos da loja: três produtos, menu de seleção e botão Comprar</title>
+  <defs>
+    <clipPath id="toldo"><rect x="0" y="0" width="860" height="14"/></clipPath>
+    <pattern id="listras" width="80" height="14" patternUnits="userSpaceOnUse">
+      <rect width="40" height="14" fill="#F472B6"/><rect x="40" width="40" height="14" fill="#FFF7E6"/>
+    </pattern>
+  </defs>
+  <rect width="860" height="520" rx="14" fill="#2D1B4E"/>
+  <rect width="860" height="14" rx="0" fill="url(#listras)" clip-path="inset(0 round 14px 14px 0 0)"/>
   <!-- barra do canal -->
-  <rect width="860" height="44" rx="10" fill="#313338"/>
-  <rect y="43" width="860" height="1" fill="#26282c"/>
-  <text x="20" y="28" font-size="18" fill="#80848e">#</text>
-  <text x="38" y="28" font-size="15" font-weight="600" fill="#f2f3f5">painel-loja</text>
+  <text x="24" y="44" font-size="18" fill="#A3E635" font-weight="700">#</text>
+  <text x="44" y="44" font-size="16" font-weight="700" fill="#FFF7E6">painel-loja</text>
+  <rect x="0" y="56" width="860" height="1" fill="#FFF7E6" fill-opacity="0.15"/>
 
   <!-- mensagem do bot -->
-  <circle cx="44" cy="84" r="20" fill="#FF4FA3"/>
-  <text x="44" y="91" font-size="20" text-anchor="middle" fill="#fff">🛒</text>
-  <text x="76" y="78" font-size="15" font-weight="600" fill="#FF4FA3">Shopkeep</text>
-  <rect x="204" y="65" width="34" height="16" rx="3" fill="#5865f2"/>
-  <text x="221" y="77" font-size="10" font-weight="700" text-anchor="middle" fill="#fff">APP</text>
-  <text x="246" y="78" font-size="12" fill="#949ba4">Hoje às 10:00</text>
+  <circle cx="48" cy="92" r="20" fill="#A3E635"/>
+  <path d="M40 90 H56 L55 102 H41 Z" fill="#2D1B4E"/>
+  <path d="M44 90 V87 Q48 81 52 87 V90" fill="none" stroke="#2D1B4E" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="80" y="86" font-size="15" font-weight="700" fill="#A3E635">Shopkeep</text>
+  <rect x="152" y="73" width="38" height="16" rx="8" fill="#FDE047"/>
+  <text x="171" y="85" font-size="10" font-weight="700" text-anchor="middle" fill="#2D1B4E">BOT</text>
+  <text x="200" y="86" font-size="12" fill="#FFF7E6" fill-opacity="0.75">Hoje às 10:00</text>
 
   <!-- embed -->
-  <rect x="76" y="92" width="740" height="268" rx="4" fill="#2b2d31"/>
-  <rect x="76" y="92" width="4" height="268" rx="2" fill="#FF4FA3"/>
-  <text x="98" y="122" font-size="16" font-weight="700" fill="#f2f3f5">🛒 Shopkeep</text>
-  <text x="98" y="148" font-size="14" fill="#dbdee1">Escolha um produto no menu abaixo para ver os detalhes e comprar.</text>
+  <rect x="80" y="100" width="740" height="268" rx="10" fill="#3B2663"/>
+  <rect x="80" y="100" width="6" height="268" rx="3" fill="#A3E635"/>
+  <text x="106" y="130" font-size="17" font-weight="700" fill="#FFF7E6">Shopkeep</text>
+  <text x="106" y="156" font-size="14" fill="#FFF7E6">Escolha um produto no menu abaixo para ver os detalhes e comprar.</text>
 
   <g font-size="14">
-    <text x="98" y="186" font-weight="700" fill="#f2f3f5">📅 Plano Mensal</text>
-    <text x="98" y="208" fill="#dbdee1">Acesso completo por 30 dias,</text>
-    <text x="98" y="226" fill="#dbdee1">renovável.</text>
-    <text x="98" y="248" font-weight="700" fill="#f2f3f5">R$ 29,90</text>
+    <!-- ícone calendário -->
+    <rect x="106" y="174" width="16" height="16" rx="3" fill="#F472B6"/><rect x="106" y="174" width="16" height="5" rx="2" fill="#FFF7E6"/>
+    <text x="130" y="188" font-weight="700" fill="#FFF7E6">Plano Mensal</text>
+    <text x="106" y="212" fill="#FFF7E6" fill-opacity="0.85">Acesso completo por 30 dias,</text>
+    <text x="106" y="230" fill="#FFF7E6" fill-opacity="0.85">renovável.</text>
+    <path d="M106 242 H176 L186 255 L176 268 H106 Z" fill="#FDE047"/><text x="114" y="260" font-weight="700" fill="#2D1B4E">R$ 29,90</text>
 
-    <text x="348" y="186" font-weight="700" fill="#f2f3f5">🏆 Plano Anual</text>
-    <text x="348" y="208" fill="#dbdee1">Acesso completo por 12 meses</text>
-    <text x="348" y="226" fill="#dbdee1">com desconto.</text>
-    <text x="348" y="248" font-weight="700" fill="#f2f3f5">R$ 299,00</text>
+    <!-- ícone estrela -->
+    <path d="M364 173 l2.9 6 6.6 .9 -4.8 4.6 1.2 6.5 -5.9 -3.1 -5.9 3.1 1.2 -6.5 -4.8 -4.6 6.6 -.9 z" fill="#FDE047"/>
+    <text x="382" y="188" font-weight="700" fill="#FFF7E6">Plano Anual</text>
+    <text x="356" y="212" fill="#FFF7E6" fill-opacity="0.85">Acesso completo por 12 meses</text>
+    <text x="356" y="230" fill="#FFF7E6" fill-opacity="0.85">com desconto.</text>
+    <path d="M356 242 H436 L446 255 L436 268 H356 Z" fill="#FDE047"/><text x="364" y="260" font-weight="700" fill="#2D1B4E">R$ 299,00</text>
 
-    <text x="598" y="186" font-weight="700" fill="#f2f3f5">🛟 Suporte Premium</text>
-    <text x="598" y="208" fill="#dbdee1">Atendimento prioritário e canal</text>
-    <text x="598" y="226" fill="#dbdee1">exclusivo por 30 dias.</text>
-    <text x="598" y="248" font-weight="700" fill="#f2f3f5">R$ 99,00</text>
+    <!-- ícone boia -->
+    <circle cx="614" cy="182" r="8" fill="none" stroke="#A3E635" stroke-width="4"/>
+    <text x="632" y="188" font-weight="700" fill="#FFF7E6">Suporte Premium</text>
+    <text x="606" y="212" fill="#FFF7E6" fill-opacity="0.85">Atendimento prioritário e canal</text>
+    <text x="606" y="230" fill="#FFF7E6" fill-opacity="0.85">exclusivo por 30 dias.</text>
+    <path d="M606 242 H676 L686 255 L676 268 H606 Z" fill="#FDE047"/><text x="614" y="260" font-weight="700" fill="#2D1B4E">R$ 99,00</text>
   </g>
-  <text x="98" y="342" font-size="12" fill="#949ba4">O pagamento acontece num ticket privado.</text>
+  <text x="106" y="350" font-size="12" fill="#FFF7E6" fill-opacity="0.8">O pagamento acontece num ticket privado.</text>
 
-  <!-- select menu aberto -->
-  <rect x="76" y="374" width="500" height="40" rx="4" fill="#1e1f22" stroke="#3f4147"/>
-  <text x="94" y="399" font-size="14" fill="#949ba4">Selecione um produto</text>
-  <path d="M552 391l6 6 6-6" fill="none" stroke="#b5bac1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- menu de seleção -->
+  <rect x="80" y="382" width="500" height="40" rx="10" fill="#FFF7E6"/>
+  <text x="100" y="407" font-size="14" fill="#2D1B4E">Selecione um produto</text>
+  <path d="M552 399l6 6 6-6" fill="none" stroke="#2D1B4E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- dica: resposta efêmera -->
-  <rect x="76" y="428" width="500" height="76" rx="6" fill="#2b2d31"/>
-  <rect x="76" y="428" width="4" height="76" rx="2" fill="#7C5CFF"/>
-  <text x="96" y="452" font-size="14" font-weight="700" fill="#f2f3f5">🏆 Plano Anual</text>
-  <text x="96" y="472" font-size="12" fill="#949ba4">Só você vê esta mensagem</text>
-  <rect x="96" y="480" width="104" height="18" rx="3" fill="#FF4FA3"/>
-  <text x="148" y="494" font-size="12" font-weight="600" text-anchor="middle" fill="#fff">🛒 Comprar</text>
+  <!-- resposta só para o cliente -->
+  <rect x="80" y="436" width="500" height="76" rx="10" fill="#3B2663"/>
+  <rect x="80" y="436" width="6" height="76" rx="3" fill="#F472B6"/>
+  <path d="M104 450 l2.9 6 6.6 .9 -4.8 4.6 1.2 6.5 -5.9 -3.1 -5.9 3.1 1.2 -6.5 -4.8 -4.6 6.6 -.9 z" fill="#FDE047"/>
+  <text x="124" y="466" font-size="14" font-weight="700" fill="#FFF7E6">Plano Anual</text>
+  <text x="104" y="484" font-size="12" fill="#FFF7E6" fill-opacity="0.8">Só você vê esta mensagem</text>
+  <rect x="104" y="490" width="104" height="18" rx="9" fill="#A3E635"/>
+  <text x="156" y="503" font-size="12" font-weight="700" text-anchor="middle" fill="#2D1B4E">Comprar</text>
 </svg>
