@@ -59,3 +59,56 @@ export function resumoProduto(p: Produto, moeda: string): Payload {
 export function produtoIndisponivel(): { content: string } {
   return { content: "Esse produto saiu da loja. Abra o painel de novo para ver a lista atual." };
 }
+
+export function mensagemDoTicket(opcoes: {
+  usuarioId: string;
+  produto: Produto;
+  moeda: string;
+  pedidoId: string;
+  cobranca: { codigo: string; expiraEm: Date };
+  cargoEquipeId: string;
+}): Payload & { allowedMentions: { users: string[]; roles: string[] } } {
+  const unix = Math.floor(opcoes.cobranca.expiraEm.getTime() / 1000);
+  const embed = new EmbedBuilder()
+    .setColor(COR.aviso)
+    .setTitle(`Pedido #${opcoes.pedidoId} · aguardando pagamento`)
+    .addFields(
+      { name: "Produto", value: opcoes.produto.nome, inline: true },
+      { name: "Valor", value: formatarPreco(opcoes.produto.precoCentavos, opcoes.moeda), inline: true },
+      { name: "Expira", value: `<t:${unix}:R>`, inline: true },
+      { name: "Código de pagamento", value: `\`\`\`${opcoes.cobranca.codigo}\`\`\`` },
+    )
+    .setFooter({ text: "Depois de pagar, clique em Já paguei. A equipe entrega por aqui." });
+  const botoes = new ActionRowBuilder<ButtonBuilder>().addComponents(
+    new ButtonBuilder().setCustomId(IDS.jaPaguei(opcoes.pedidoId)).setLabel("Já paguei").setEmoji("✅").setStyle(ButtonStyle.Success),
+    new ButtonBuilder().setCustomId(IDS.cancelar(opcoes.pedidoId)).setLabel("Cancelar pedido").setStyle(ButtonStyle.Danger),
+  );
+  return {
+    content: `<@${opcoes.usuarioId}> <@&${opcoes.cargoEquipeId}>`,
+    embeds: [embed],
+    components: [botoes],
+    allowedMentions: { users: [opcoes.usuarioId], roles: [opcoes.cargoEquipeId] },
+  };
+}
+
+export function pagamentoConfirmado(pedidoId: string): Payload {
+  const embed = new EmbedBuilder()
+    .setColor(COR.ok)
+    .setTitle(`Pagamento confirmado · pedido #${pedidoId}`)
+    .setDescription("Recebido. A equipe vai fazer a entrega neste canal em instantes.");
+  return { embeds: [embed] };
+}
+
+export function entregaDoPedido(opcoes: { pedidoId: string; produto: string; mensagem: string; equipeNome: string }): Payload {
+  const embed = new EmbedBuilder()
+    .setColor(COR.ok)
+    .setTitle(`📦 Pedido #${opcoes.pedidoId} entregue`)
+    .setDescription(opcoes.mensagem.slice(0, 4000))
+    .addFields({ name: "Produto", value: opcoes.produto, inline: true }, { name: "Entregue por", value: opcoes.equipeNome, inline: true })
+    .setFooter({ text: "Qualquer dúvida, responda neste canal. A equipe fecha o ticket depois." });
+  return { embeds: [embed] };
+}
+
+export function textoDeLog(linhas: Record<string, string>): string {
+  return Object.entries(linhas).map(([k, v]) => `**${k}:** ${v}`).join("\n");
+}
